@@ -3,3 +3,98 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 100px;
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(40,253,74);
+    background: linear-gradient(45deg, rgba(40,253,74,1) 0%, rgba(74,206,235,1) 100%);
+}
+.header{
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    background-color: #FFF;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(74,206,235,1);
+}
+.author{
+    text-align: center;
+    color: rgb(14, 185, 97);
+    font-weight: 500;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px 120px;
+    width: 100%;
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page-card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 412.5px;
+    min-height: 189px;
+    background-color: #FFF;
+    background-position: center;
+    background-size: cover;
+    border-radius: 24px;
+    text-transform: uppercase;
+}
+.shadow-card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.85);
+    border-radius: 24px;
+    opacity: 0;
+    transition: opacity .3s;
+}
+.shadow-card:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+h3{
+    color: #FFF;
+    letter-spacing: 0.125em;
+}
+.page-1{
+    background-image: url('img/easybank.jpg');
+}
+.page-2{
+    background-image: url('img/dgm.jpg');
+}
+.page-3{
+    background-image: url('img/progamers.jpg');
+}
+.page-4{
+    background-image: url('img/tropical.jpg');
+}
+.page-5{
+    background-image: url('img/forest.jpg');
+}
+.page-6{
+    background-image: url('img/todo.jpg');
+}
