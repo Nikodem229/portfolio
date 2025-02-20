@@ -147,6 +147,15 @@ nav{
 }
 
 @media (max-width: 600px) {
+    .name{
+        font-size: 1.8rem;
+    }
+    .role{
+        font-size: 1.4rem;
+    }
+    .header{
+        font-size: 1.8rem;
+    }
     .card-box {
         flex: 1 1 100%; /* 1 karta w rzędzie */
         max-width: 100%;
